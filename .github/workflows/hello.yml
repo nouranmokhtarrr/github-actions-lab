@@ -1,11 +1,9 @@
-name: Hello Agile
+name: Hello Agile 
+on: [push] 
 
-on: [push]
-
-jobs:
-        say hello:
-            runs-on: ubuntu-latest
-            steps:
-                - name: Print Hello
-                run: echo "Hello from GitHub Actions!"
-
+jobs: 
+    say_hello: 
+        runs-on: ubuntu-latest 
+        steps:
+            - name: Print Hello 
+              run: echo "Hello from GitHub Actions!"
